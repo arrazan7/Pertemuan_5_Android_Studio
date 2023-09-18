@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="659dp"
+    android:paddingHorizontal="40dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Home Page"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/descUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username."
+            android:textSize="18sp"
+            android:textColor="#525BFF"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignTop="@id/welcome"
+            android:layout_alignBottom="@id/welcome"
+            android:layout_toEndOf="@id/welcome"/>
+
+        <TextView
+            android:id="@+id/your"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:text="Your "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular" />
+
+        <TextView
+            android:id="@+id/descEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textColor="#525BFF"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignTop="@id/your"
+            android:layout_alignBottom="@id/your"
+            android:layout_toEndOf="@id/your"/>
+
+        <TextView
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your"
+            android:text="has been activated."
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular" />
+
+        <TextView
+            android:id="@+id/your2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/active"
+            android:text="Your "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular" />
+
+        <TextView
+            android:id="@+id/descPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="18sp"
+            android:textColor="#525BFF"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignTop="@id/your2"
+            android:layout_alignBottom="@id/your2"
+            android:layout_toEndOf="@id/your2"/>
+
+        <TextView
+            android:id="@+id/regisPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/your2"
+            android:text="has been registered."
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

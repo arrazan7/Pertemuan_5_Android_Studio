@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="659dp"
+    android:paddingHorizontal="40dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="30dp"
+        android:hint="Username"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/input_register"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="30dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/input_register"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="30dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/input_register"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/input_register"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="60dp">
+
+        <ImageView
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_check_box_outline_blank_24"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By checking the box you agree to our "
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_alignTop="@id/checkbox"
+            android:layout_alignBottom="@id/checkbox"
+            android:layout_toEndOf="@id/checkbox"
+            android:paddingStart="5dp"/>
+
+        <TextView
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms "
+            android:textSize="10sp"
+            android:textColor="#525BFF"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_alignTop="@id/cb1"
+            android:layout_alignBottom="@id/cb1"
+            android:layout_toEndOf="@id/cb1"/>
+
+        <TextView
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and "
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_alignTop="@id/cb2"
+            android:layout_alignBottom="@id/cb2"
+            android:layout_toEndOf="@id/cb2"/>
+
+        <TextView
+            android:id="@+id/cb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conditions"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#525BFF"
+            android:gravity="center"
+            android:layout_alignTop="@id/cb3"
+            android:layout_alignBottom="@id/cb3"
+            android:layout_toEndOf="@id/cb3"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Register"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/btn_register"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an Account? "
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="15sp"
+            android:textColor="#525BFF"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignTop="@id/have_account"
+            android:layout_alignBottom="@id/have_account"
+            android:layout_toEndOf="@id/have_account"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
